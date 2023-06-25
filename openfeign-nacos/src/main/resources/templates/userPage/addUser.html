@@ -82,49 +82,40 @@
 <script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
 
 <script>
-    $(function () {
-        $("#username").blur(function () {
+    $(document).ready(function () {
+        $("form").unbind("submit").submit(function (event) {
+            event.preventDefault(); // 阻止表单默认行为
+
             var username = $("input[name='uUsername']").val();
             if (username === '') {
                 layer.msg('用户名为空');
-            } else {
-                $.ajax({
-                    url: '/user/checkName2',
-                    type: 'POST',
-                    data: {
-                        'uUsername': username
-                    },
-                    success: function (res) {
-                        if (res) {
-                            layer.msg('用户名已存在');
-                            $(document).ready(function () {
-                                $("form").unbind("submit").submit(function (event) {
-                                    event.preventDefault(); // 阻止表单默认行为
-                                    layer.msg('当前用户名不可用，请重试'); // 显示layer.msg弹窗
-                                });
-                            });
-                        } else {
-                            layer.msg('用户名可用');
-                            $(document).ready(function () {
-                                $("form").unbind("submit").submit(function (event) {
-                                    event.preventDefault(); // 阻止表单默认行为
-                                    layer.msg('添加用户应该成功了，正在尝试写入数据库...'); // 显示layer.msg弹窗
-
-                                    // 延迟2秒后再提交表单
-                                    setTimeout(function () {
-                                        $("form").submit(); // 使用当前表单的jQuery对象提交表单
-                                    }, 2000);
-                                });
-                            });
-                        }
-                    },
-                    error: function () {
-                        layer.msg('请求失败，请检查网络');
-                    }
-                });
+                return;
             }
-        })
-    })
+
+            $.ajax({
+                url: '/user/checkName2',
+                type: 'POST',
+                data: {
+                    'uUsername': username
+                },
+                success: function (res) {
+                    if (res) {
+                        layer.msg('用户名已存在');
+                    } else {
+                        layer.msg('添加用户应该成功了，正在尝试写入数据库...'); // 显示layer.msg弹窗
+
+                        // 延迟2秒后再提交表单
+                        setTimeout(function () {
+                            $("form").unbind("submit").submit(); // 使用当前表单的jQuery对象提交表单
+                        }, 2000);
+                    }
+                },
+                error: function () {
+                    layer.msg('请求失败，请检查网络');
+                }
+            });
+        });
+    });
 </script>
 
 </body>
