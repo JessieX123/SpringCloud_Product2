@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>首页SpringCloud</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<div class="topbar">
+    <a th:href="@{/}" style="color: lightgreen">首页<span></span></a>
+    <a th:href="@{/main/addTicket}" th:if="${session.userInfo != null}">购票<span></span></a>
+    <a th:href="@{/main/cinemaList}">影院列表<span></span></a>
+    <a th:href="@{/main/movieList}">电影列表<span></span></a>
+    <a th:href="@{/main/ticketList}"
+       th:if="${session.userInfo != null && session.userInfo.getURoleId() == 1}">已购列表</a>
+    <a th:href="@{/main/userList}"
+       th:if="${session.userInfo != null && session.userInfo.getURoleId() == 1}">用户列表</a>
+    <a th:href="@{/user/getUserById(id=${session.userInfo.getUId()})}" th:if="${session.userInfo != null}"
+       th:text=" '个人中心：' + ${session.userInfo.getUUsername()} + '（' + ${session.userInfo.role.getRName()} + '）'">显示用户名<span></span></a>
+    <a th:href="@{/main/login}" th:if="${session.userInfo == null}">用户登录<span></span></a>
+    <a class="confirm-link login-out" th:if="${session.userInfo != null}">退出登录</a>
+
+    <div class="floating-div">
+        <p style="font-size: 15px">便利猫购票系统<br/><span th:if="${session.userInfo != null}"
+                                                            th:text="'欢迎：' + ${session.userInfo.getUUsername()}">用户名</span>
+        </p>
+    </div>
+</div>
+
+<div class="movie-container">
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 1</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img1.jpeg}" alt="Movie 1">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 2</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img2.jpeg}" alt="Movie 2">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 3</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img3.jpeg}" alt="Movie 3">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 4</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img4.jpeg}" alt="Movie 4">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 5</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img5.jpeg}" alt="Movie 5">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 6</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img6.jpeg}" alt="Movie 6">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 7</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img7.jpeg}" alt="Movie 7">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 8</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img8.jpeg}" alt="Movie 8">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 9</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img9.jpeg}" alt="Movie 9">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 10</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img10.jpeg}" alt="Movie 10">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 11</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img11.jpeg}" alt="Movie 11">
+        </a>
+    </div>
+
+    <div class="movie">
+        <div class="movie-content">
+            <div class="movie-name">Movie 12</div>
+        </div>
+        <a th:href="@{/main/movieList}">
+            <img th:src="@{/images/img12.jpeg}" alt="Movie 12">
+        </a>
+    </div>
+
+</div>
+
+<!-- 引入 jQuery 库 -->
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- 引入 layui JavaScript -->
+<script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
+
+<script>
+    // 监听点击事件
+    $('.confirm-link.login-out').on('click', function (e) {
+        e.preventDefault(); // 阻止默认跳转行为
+        var url = $(this).attr('href');
+
+        // 弹出确认框
+        layer.confirm('退出登录', {icon: 3, title: '提示信息'}, function (index) {
+            layer.close(index); // 关闭确认框
+            window.location.href = '/user/loginOut'; // 跳转到指定链接
+        });
+    });
+
+</script>
+
+</body>
+</html>

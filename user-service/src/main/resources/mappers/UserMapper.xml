@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiong.dao.UserMapper">
+    <!--User表-->
+    <resultMap id="baseMap" type="User">
+        <id property="uId" column="u_id"/>
+        <result property="uUsername" column="u_username"/>
+        <result property="uPassword" column="u_password"/>
+        <result property="uPhone" column="u_phone"/>
+        <result property="uDate" column="u_date"/>
+        <result property="uRoleId" column="u_role_id"/>
+    </resultMap>
+
+    <!--User表和Role表，一对一关联关系-->
+    <resultMap id="UserAndRole" type="User" extends="baseMap">
+        <association property="role" javaType="Role">
+            <id property="rId" column="r_id"/>
+            <result property="rName" column="r_name"/>
+        </association>
+    </resultMap>
+
+    <!--查询所有User，并关联查询Role-->
+    <select id="getAllUserAndRole" resultMap="UserAndRole">
+        select u.*, r.*
+        from user u, role r
+        where u.u_role_id = r.r_id
+        <if test="name!=null">
+            and u.u_username like concat('%', #{name}, '%')
+        </if>
+        order by u.u_id asc
+        limit #{start}, #{pageSize}
+    </select>
+</mapper>

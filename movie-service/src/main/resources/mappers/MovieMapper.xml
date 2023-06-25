@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiong.dao.MovieMapper">
+    <!--Movie单表-->
+    <resultMap id="baseMap" type="Movie">
+        <id property="mId" column="m_id"/>
+        <result property="mName" column="m_name"/>
+        <result property="mDate" column="m_date"/>
+        <result property="mCountry" column="m_country"/>
+    </resultMap>
+
+    <!--Movie和Cinema多对多关联关系-->
+    <resultMap id="MovieAndCinema" type="Movie" extends="baseMap">
+        <collection property="cinemaList" ofType="Cinema">
+            <id property="cId" column="c_id"/>
+            <result property="cName" column="c_name"/>
+            <result property="cPhone" column="c_phone"/>
+            <result property="cAddress" column="c_address"/>
+            <result property="cDate" column="c_date"/>
+        </collection>
+    </resultMap>
+
+    <!--查询所有的电影信息，并关联查询相关的电影院信息-->
+    <select id="getAllMovieAndCinema" resultMap="MovieAndCinema">
+        SELECT cinema.*,
+               movie.*
+        FROM movie_cinema
+                 LEFT JOIN
+             movie
+             ON
+                 movie_cinema.mc_movie_id = movie.m_id
+                 LEFT JOIN
+             cinema
+             ON
+                 cinema.c_id = movie_cinema.mc_cinema_id
+        ORDER BY movie.m_id ASC
+    </select>
+
+    <!--根据ID查询电影信息，并关联查询相关的电影院信息-->
+    <select id="getMovieAndCinemaById" resultMap="MovieAndCinema" parameterType="Integer">
+        SELECT cinema.*,
+               movie.*
+        FROM movie_cinema
+                 LEFT JOIN
+             movie
+             ON
+                 movie_cinema.mc_movie_id = movie.m_id
+                 LEFT JOIN
+             cinema
+             ON
+                 cinema.c_id = movie_cinema.mc_cinema_id
+        WHERE movie.m_id = #{id}
+        ORDER BY movie.m_id ASC
+    </select>
+</mapper>

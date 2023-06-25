@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiong.dao.TicketMapper">
+    <!--Ticket单表-->
+    <resultMap id="baseMap" type="Ticket">
+        <id property="tId" column="t_id"/>
+        <result property="tMovie" column="t_movie"/>
+        <result property="tCinema" column="t_cinema"/>
+        <result property="tDate" column="t_date"/>
+        <result property="tUser" column="t_user"/>
+    </resultMap>
+
+    <!--Ticket和Movie和Cinema和User的一对一多表-->
+    <resultMap id="getAll" type="Ticket" extends="baseMap">
+        <!--Movie表-->
+        <association property="movie" javaType="Movie">
+            <id property="mId" column="m_id"/>
+            <result property="mName" column="m_name"/>
+            <result property="mDate" column="m_date"/>
+            <result property="mCountry" column="m_country"/>
+        </association>
+
+        <!--Cinema表-->
+        <association property="cinema" javaType="Cinema">
+            <id property="cId" column="c_id"/>
+            <result property="cName" column="c_name"/>
+            <result property="cPhone" column="c_phone"/>
+            <result property="cAddress" column="c_address"/>
+            <result property="cDate" column="c_date"/>
+        </association>
+
+        <!--User表-->
+        <association property="user" javaType="User">
+            <id property="uId" column="u_id"/>
+            <result property="uUsername" column="u_username"/>
+            <result property="uPassword" column="u_password"/>
+            <result property="uPhone" column="u_phone"/>
+            <result property="uDate" column="u_date"/>
+            <result property="uRoleId" column="u_role_id"/>
+        </association>
+    </resultMap>
+
+    <sql id="getAll">
+        SELECT ticket.*,
+               movie.*,
+               cinema.*,
+               `user`.*
+        FROM ticket
+                 LEFT JOIN
+             movie
+             ON
+                 ticket.t_movie = movie.m_id
+                 LEFT JOIN
+             cinema
+             ON
+                 ticket.t_cinema = cinema.c_id
+                 LEFT JOIN
+             `user`
+             ON
+                 ticket.t_user = `user`.u_id
+    </sql>
+
+    <!--查询所有，多表-->
+    <select id="getAll" resultMap="getAll">
+        <include refid="getAll"/>
+        ORDER BY
+        ticket.t_id ASC
+        LIMIT #{start}, #{pageSize}
+    </select>
+
+    <!--查询所有，多表，没有分页-->
+    <select id="getAll1" resultMap="getAll">
+        <include refid="getAll"/>
+        ORDER BY
+        ticket.t_id ASC
+    </select>
+
+    <!--根据ID查询，多表-->
+    <select id="getTicketById" resultMap="getAll">
+        <include refid="getAll"/>
+        WHERE ticket.t_id = #{id}
+    </select>
+</mapper>

@@ -1,0 +1,114 @@
+/* 设置页面样式 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* 设置顶栏样式 */
+.topbar {
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* 设置字体样式 */
+.topbar a,
+.topbar p {
+    position: relative; /* 将超链接的外层 div 元素设置为相对定位 */
+    z-index: 1; /* 设置超链接的 z-index 属性，避免被覆盖 */
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* 添加过渡效果 */
+    cursor: default; /* 让鼠标在p标签上时不出现任何特殊样式 */
+}
+
+/* 设置悬停效果 */
+.topbar a span,
+.topbar p span {
+    background-color: rgba(255, 255, 255, 0); /* 设置链接背景颜色，注意透明度必须大于0 */
+    z-index: -1; /* 将链接背景元素的 z-index 属性设为 -1，使其处于链接的下层 */
+    transition: background-color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* 添加过渡效果 */
+}
+
+/* 设置悬停时的样式 */
+.topbar a:hover,
+.topbar p:hover {
+    color: #f2f2f2;
+    font-size: 22px; /* 鼠标悬停时设置字体大小 */
+}
+
+/* 设置悬浮 div 样式 */
+.floating-div {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 200px;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 1;
+    opacity: 0.8; /* 设置悬浮窗80%透明度 */
+    pointer-events: none; /* 浏览器不对该元素进行任何鼠标事件的处理 */
+}
+
+
+/* 设置电影图片容器样式 */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+/* 设置电影图片样式 */
+.movie {
+    width: 350px;
+    height: 525px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 设置电影图片悬停样式 */
+.movie:hover {
+    transform: scale(1.05);
+}
+
+/* 设置电影图片实际大小 */
+.movie img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 设置电影名字样式 */
+.movie-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    box-sizing: border-box;
+}
+

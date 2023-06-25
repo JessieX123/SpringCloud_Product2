@@ -1,0 +1,17 @@
+server:
+  port: 6969
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  application:
+    name: openfeign-nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  main:
+    allow-bean-definition-overriding: true
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html

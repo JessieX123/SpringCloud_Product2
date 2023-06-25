@@ -1,0 +1,37 @@
+/* 居中样式 */
+.layui-container {
+    margin: 0 auto;
+}
+
+/* 表格样式 */
+.layui-table-cell {
+    height: auto !important;
+    line-height: normal !important;
+    padding: 0 15px !important;
+    text-align: center;
+}
+
+.laytable-cell-1-uId,
+.laytable-cell-1-uUsername,
+.laytable-cell-1-uPassword,
+.laytable-cell-1-uPhone,
+.laytable-cell-1-uDate,
+.laytable-cell-1-uRoleId {
+    width: 16.66%;
+}
+
+/* 分页样式 */
+#page {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.layui-laypage-prev,
+.layui-laypage-next {
+    color: #333 !important;
+}
+
+.layui-laypage-skip {
+    display: none;
+}
+

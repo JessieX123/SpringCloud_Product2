@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>订单</title>
+    <!-- 引入layui样式 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.7.6/css/layui.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+<div class="topbar">
+    <p style="color: lightgreen">订单信息<span></span></p>
+
+    <div class="floating-div">
+        <p style="font-size: 15px">便利猫购票系统<br/><span th:if="${session.userInfo != null}"
+                                                            th:text="'欢迎：' + ${session.userInfo.getUUsername()}">用户名</span>
+        </p>
+    </div>
+</div>
+
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col-md-offset3 layui-col-md6">
+            <div class="layui-card">
+                <div class="layui-card-header">订单</div>
+                <div class="layui-card-body">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">用户名</label>
+                        <div class="layui-input-block">
+                            <p th:text="${ticketInfo.user.getUUsername()}" style="padding: 7px 15px;color: darkgray">
+                                用户名</p>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">电影名</label>
+                        <div class="layui-input-block">
+                            <p th:text="${ticketInfo.movie.getMName()}" style="padding: 7px 15px;color: darkgray">
+                                电影名</p>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">上映国家</label>
+                        <div class="layui-input-block">
+                            <p th:text="${ticketInfo.movie.getMCountry()}" style="padding: 7px 15px;color: darkgray">
+                                上映国家</p>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">影院名</label>
+                        <div class="layui-input-block">
+                            <p th:text="${ticketInfo.cinema.getCName()}" style="padding: 7px 15px;color: darkgray">
+                                影院名</p>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">影院地址</label>
+                        <div class="layui-input-block">
+                            <p th:text="${ticketInfo.cinema.getCAddress()}" style="padding: 7px 15px;color: darkgray">
+                                影院地址</p>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">创建订单</label>
+                        <div class="layui-input-block">
+                            <p th:text="${#dates.format(ticketInfo.getTDate(),'yyyy 年 MM 月 dd 日')}"
+                               style="padding: 7px 15px;color: darkgray">创建订单</p>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <a th:href="@{/}" class="layui-btn layui-btn-fluid" id="updateButton">返回首页
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 引入 jQuery 库 -->
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- 引入 layui JavaScript -->
+<script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
+
+</body>
+</html>

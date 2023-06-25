@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>电影列表</title>
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+    <link type="text/css" rel="stylesheet" href="/css/list.css">
+    <!-- 引入layui样式 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.7.6/css/layui.css">
+</head>
+<body>
+<div class="topbar">
+    <a th:href="@{/}">首页<span></span></a>
+    <p style="color: lightgreen">电影列表</p>
+
+    <div class="floating-div">
+        <p style="font-size: 15px">便利猫购票系统<br/><span th:if="${session.userInfo != null}"
+                                                            th:text="'欢迎：' + ${session.userInfo.getUUsername()}">用户名</span>
+        </p>
+    </div>
+</div>
+
+<div class="layui-container" style="margin-top: 20px">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <form th:action="@{/main/movieList}" class="layui-form" lay-filter="searchForm">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">模糊查询：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="mName" placeholder="请输入电影名" class="layui-input"
+                               th:value="${name1}" id="search-input">
+                    </div>
+                    <div class="layui-btn-container">
+                        <button type="submit" class="layui-btn">查询</button>
+                        <a th:href="@{/main/movieList(currentPage=1,mName=${name1})}" class="layui-btn">第一页</a>
+                        <a th:href="@{/main/movieList(currentPage=${pages.getPrePage()},mName=${name1})}"
+                           class="layui-btn">上一页</a>
+                        <p class="layui-btn">第<span th:text="${pages.getCurrentPage()}">几</span>页/共<span
+                                th:text="${pages.getTotalPage()}">几</span>页</p>
+                        <a th:href="@{/main/movieList(currentPage=${pages.getNextPage()},mName=${name1})}"
+                           class="layui-btn">下一页</a>
+                        <a th:href="@{/main/movieList(currentPage=${pages.getTotalPage()},mName=${name1})}"
+                           class="layui-btn">最后一页</a>
+                    </div>
+
+                </div>
+            </form>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>行数</th>
+                    <th>ID</th>
+                    <th>电影名</th>
+                    <th>上映日期</th>
+                    <th>上映国家</th>
+                    <th>可观看的影院</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="movie,status:${movieList}">
+                    <td th:text="${status.count}">行数</td>
+                    <td th:text="${movie.getMId()}">ID</td>
+                    <td th:text="${movie.getMName()}">电影名</td>
+                    <td th:text="${#dates.format(movie.getMDate(),'yyyy 年 MM 月 dd 日')}">上映日期</td>
+                    <td th:text="${movie.getMCountry()}">上映国家</td>
+                    <td>
+                        <a th:href="@{/movie/getCinemasByMovieId(id=${movie.getMId()})}"
+                           class="layui-btn layui-btn-xs layui-btn-normal">查看</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 引入 jQuery 库 -->
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- 引入 layui JavaScript -->
+<script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
+
+<script>
+    // 绑定清空按钮点击事件
+    $('.search-reset-btn').click(function () {
+        $('#search-input').val('');
+    });
+</script>
+
+</body>
+</html>

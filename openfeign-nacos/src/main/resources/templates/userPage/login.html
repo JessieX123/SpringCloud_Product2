@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <!-- 引入layui样式 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.7.6/css/layui.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+<div class="topbar">
+    <a th:href="@{/}">回到首页<span></span></a>
+    <p style="color: lightgreen">用户登录<span></span></p>
+    <a th:href="@{/main/register}">注册</a>
+
+    <div class="floating-div">
+        <p style="font-size: 15px">便利猫购票系统<br/><span th:if="${session.userInfo != null}"
+                                                            th:text="'欢迎：' + ${session.userInfo.getUUsername()}">用户名</span>
+        </p>
+    </div>
+</div>
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col-md-offset3 layui-col-md6">
+            <div class="layui-card">
+                <div class="layui-card-header">用户登录</div>
+                <div class="layui-card-body">
+                    <form class="layui-form" action="">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用户名</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="uUsername" required lay-verify="required"
+                                       placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">密码</label>
+                            <div class="layui-input-block">
+                                <input type="password" name="uPassword" required lay-verify="required"
+                                       placeholder="请输入密码" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">登录身份</label>
+                            <div class="layui-input-block">
+                                <select name="uRoleId" lay-filter="roleSelect">
+                                    <option disabled selected></option>
+                                    <option th:each="role: ${roleList}" th:value="${role.rId}"
+                                            th:text="${role.rName}"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" id="loginButton" lay-submit lay-filter="login">立即登录
+                                </button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 引入 jQuery 库 -->
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- 引入 layui JavaScript -->
+<script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
+
+<script>
+    function submitLogin() {
+        var username = $("input[name='uUsername']").val();
+        var password = $("input[name='uPassword']").val();
+        var roleId = $("select[name='uRoleId']").val();
+        $.ajax({
+            url: '/user/login',
+            type: 'POST',
+            data: {
+                'uUsername': username,
+                'uPassword': password,
+                'uRoleId': roleId
+            },
+            success: function (res) {
+                if (res) {
+                    layer.msg('登录成功');
+                    setTimeout(function () {
+                        window.location.href = '/';
+                    }, 1000);//1秒后跳转
+                } else {
+                    layer.msg('登录失败，用户名、密码、身份可能有误');
+                }
+            },
+            error: function () {
+                layer.msg('请求失败，请检查网络');
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        $("form").unbind("submit").submit(function(event) {
+            event.preventDefault(); // 阻止按钮默认行为
+            submitLogin();
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>购票</title>
+    <!-- 引入layui样式 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.7.6/css/layui.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+<div class="topbar">
+    <a href="#" onclick="history.back(); return false;">返回上一级<span></span></a>
+    <p style="color: lightgreen">选择电影<span></span></p>
+
+    <div class="floating-div">
+        <p style="font-size: 15px">便利猫购票系统<br/><span th:if="${session.userInfo != null}"
+                                                            th:text="'欢迎：' + ${session.userInfo.getUUsername()}">用户名</span>
+        </p>
+    </div>
+</div>
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col-md-offset3 layui-col-md6">
+            <div class="layui-card">
+                <div class="layui-card-header">购票</div>
+                <div class="layui-card-body">
+                    <form class="layui-form" th:action="@{/main/addTicket1}">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">电影名</label>
+                            <div class="layui-input-block">
+                                <select name="tMovie" lay-search>
+                                    <option value="-1" disabled selected></option>
+                                    <option th:each="movie :${movieList}"
+                                            th:value="${movie.getMId()}" th:text="${movie.getMName()}"></option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn layui-btn-fluid" id="updateButton" lay-submit
+                                        lay-filter="login">下一步，选择电影院
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 引入 jQuery 库 -->
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- 引入 layui JavaScript -->
+<script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        const updateButton = document.getElementById('updateButton');
+
+        updateButton.addEventListener('click', function (event) {
+            event.preventDefault(); // 阻止按钮默认行为
+            layer.msg('正在查询可以观看的影院...'); // 显示layer.msg弹窗
+
+            // 延迟2秒后再提交表单
+            setTimeout(function () {
+                $('form').submit();
+            }, 2000);
+        });
+    });
+
+</script>
+
+</body>
+</html>

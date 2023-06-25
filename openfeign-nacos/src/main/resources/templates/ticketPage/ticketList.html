@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>已购列表</title>
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+    <link type="text/css" rel="stylesheet" href="/css/list.css">
+    <!-- 引入layui样式 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.7.6/css/layui.css">
+</head>
+<body>
+<div class="topbar">
+    <a th:href="@{/}">首页<span></span></a>
+    <p style="color: lightgreen">已购列表</p>
+
+    <div class="floating-div">
+        <p style="font-size: 15px">便利猫购票系统<br/><span th:if="${session.userInfo != null}"
+                                                            th:text="'欢迎：' + ${session.userInfo.getUUsername()}">用户名</span>
+        </p>
+    </div>
+</div>
+
+<div class="layui-container" style="margin-top: 20px">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-form-item">
+                <div class="layui-btn-container" style="text-align: center">
+                    <a th:href="@{/main/ticketList(currentPage=1)}" class="layui-btn">第一页</a>
+                    <a th:href="@{/main/ticketList(currentPage=${pages.getPrePage()})}"
+                       class="layui-btn">上一页</a>
+                    <p class="layui-btn">第<span th:text="${pages.getCurrentPage()}">几</span>页/共<span
+                            th:text="${pages.getTotalPage()}">几</span>页</p>
+                    <a th:href="@{/main/ticketList(currentPage=${pages.getNextPage()})}"
+                       class="layui-btn">下一页</a>
+                    <a th:href="@{/main/ticketList(currentPage=${pages.getTotalPage()})}"
+                       class="layui-btn">最后一页</a>
+                </div>
+            </div>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>行数</th>
+                    <th>ID</th>
+                    <th>电影名</th>
+                    <th>影院名称</th>
+                    <th>用户名</th>
+                    <th>用户手机号</th>
+                    <th>购买时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="ticket,status:${ticketList}">
+                    <td th:text="${status.count}">行数</td>
+                    <td th:text="${ticket.getTId()}">ID</td>
+                    <td th:text="${ticket.movie.getMName()}">电影名</td>
+                    <td th:text="${ticket.cinema.getCName()}">影院名称</td>
+                    <td th:text="${ticket.user.getUUsername()}">用户名</td>
+                    <td th:text="${ticket.user.getUPhone()}">用户手机号</td>
+                    <td th:text="${#dates.format(ticket.getTDate(),'yyyy 年 MM 月 dd 日')}">购买时间</td>
+                    <td>
+                        <a th:href="@{/ticket/deleteTicket(tId=${ticket.getTId()},currentPage=${pages.getCurrentPage()})}"
+                           class="layui-btn layui-btn-xs layui-btn-danger"
+                           onclick="return confirm('确认删除？');">删除</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 引入 jQuery 库 -->
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- 引入 layui JavaScript -->
+<script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
+
+<script>
+    // 绑定清空按钮点击事件
+    $('.search-reset-btn').click(function () {
+        $('#search-input').val('');
+    });
+</script>
+
+</body>
+</html>

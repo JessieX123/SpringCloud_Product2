@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>修改信息</title>
+    <!-- 引入layui样式 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.7.6/css/layui.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+
+<div class="topbar">
+    <a href="#" onclick="history.back(); return false;">返回上一级<span></span></a>
+    <p style="color: lightgreen">修改信息<span></span></p>
+
+    <div class="floating-div">
+        <p style="font-size: 15px">便利猫购票系统<br/><span th:if="${session.userInfo != null}"
+                                                            th:text="'欢迎：' + ${session.userInfo.getUUsername()}">用户名</span>
+        </p>
+    </div>
+</div>
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col-md-offset3 layui-col-md6">
+            <div class="layui-card">
+                <div class="layui-card-header">个人中心</div>
+                <div class="layui-card-body">
+                    <form class="layui-form" th:action="@{/user/updateUser}">
+                        <input type="hidden" name="uId" th:value="${userInfo.getUId()}"/>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用户名</label>
+                            <div class="layui-input-block">
+
+                                <input type="text" id="username" name="uUsername" required lay-verify="required"
+                                       th:value="${userInfo.getUUsername()}" placeholder="请输入用户名"
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">密码</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="uPassword" required lay-verify="required"
+                                       th:value="${userInfo.getUPassword()}" placeholder="请输入密码" autocomplete="off"
+                                       class="layui-input" id="password">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">手机号</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="uPhone" required lay-verify="required"
+                                       th:value="${userInfo.getUPhone()}" placeholder="请输入手机号" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">注册日期</label>
+                            <div class="layui-form-text" style="padding: 7px 15px;color: darkgray"
+                                 th:text="${#dates.format(userInfo.getUDate(),'yyyy 年 MM 月 dd 日')}"></div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">身份</label>
+                            <div class="layui-input-block">
+                                <select name="uRoleId" lay-filter="roleSelect">
+                                    <option value="10" disabled></option>
+                                    <option th:each="role: ${roleList}" th:value="${role.rId}" th:text="${role.rName}"
+                                            th:selected="${userInfo.getURoleId() == role.rId}"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" id="updateButton" lay-submit lay-filter="login">修改
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 引入 jQuery 库 -->
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- 引入 layui JavaScript -->
+<script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
+
+<script>
+    $(function () {
+        $("#username").blur(function () {
+            var id = $("input[name='uId']").val();
+            var username = $("input[name='uUsername']").val();
+            if (username === '') {
+                layer.msg('用户名为空');
+            } else {
+                $.ajax({
+                    url: '/user/checkName1',
+                    type: 'POST',
+                    data: {
+                        'uId': id,
+                        'uUsername': username
+                    },
+                    success: function (res) {
+                        if (res) {
+                            layer.msg('用户名已存在');
+                            $(document).ready(function () {
+                                $("form").unbind("submit").submit(function (event) {
+                                    event.preventDefault(); // 阻止表单默认行为
+                                    layer.msg('当前用户名不可用，请重试'); // 显示layer.msg弹窗
+                                });
+                            });
+                        } else {
+                            layer.msg('用户名可用');
+                            $(document).ready(function () {
+                                $("form").unbind("submit").submit(function (event) {
+                                    event.preventDefault(); // 阻止表单默认行为
+                                    layer.msg('修改应该成功了，正在尝试写入数据库...'); // 显示layer.msg弹窗
+
+                                    // 延迟2秒后再提交表单
+                                    setTimeout(function () {
+                                        $("form").submit(); // 使用当前表单的jQuery对象提交表单
+                                    }, 2000);
+                                });
+                            });
+                        }
+                    },
+                    error: function () {
+                        layer.msg('请求失败，请检查网络');
+                    }
+                });
+            }
+        })
+    })
+</script>
+
+</body>
+</html>

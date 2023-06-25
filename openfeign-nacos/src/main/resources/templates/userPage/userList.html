@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+    <link type="text/css" rel="stylesheet" href="/css/list.css">
+    <!-- 引入layui样式 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.7.6/css/layui.css">
+</head>
+<body>
+<div class="topbar">
+    <a th:href="@{/}">首页<span></span></a>
+    <p style="color: lightgreen">用户列表</p>
+
+    <div class="floating-div">
+        <p style="font-size: 15px">便利猫购票系统<br/><span th:if="${session.userInfo != null}"
+                                                            th:text="'欢迎：' + ${session.userInfo.getUUsername()}">用户名</span>
+        </p>
+    </div>
+</div>
+
+<div class="layui-container" style="margin-top: 20px">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <form th:action="@{/main/userList}" class="layui-form" lay-filter="searchForm">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">模糊查询：</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="uUsername" placeholder="请输入姓名" class="layui-input"
+                               th:value="${name1}" id="search-input">
+                    </div>
+                    <div class="layui-btn-container">
+                        <button type="submit" class="layui-btn">查询</button>
+                        <a th:href="@{/main/userList(currentPage=1,uUsername=${name1})}" class="layui-btn">第一页</a>
+                        <a th:href="@{/main/userList(currentPage=${pages.getPrePage()},uUsername=${name1})}"
+                           class="layui-btn">上一页</a>
+                        <p class="layui-btn">第<span th:text="${pages.getCurrentPage()}">几</span>页/共<span
+                                th:text="${pages.getTotalPage()}">几</span>页</p>
+                        <a th:href="@{/main/userList(currentPage=${pages.getNextPage()},uUsername=${name1})}"
+                           class="layui-btn">下一页</a>
+                        <a th:href="@{/main/userList(currentPage=${pages.getTotalPage()},uUsername=${name1})}"
+                           class="layui-btn">最后一页</a>
+                        <a th:href="@{/main/addUserForAdmin}" class="layui-btn layui-btn-normal" style="float: right">添加用户</a>
+                    </div>
+
+                </div>
+            </form>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>行数</th>
+                    <th>ID</th>
+                    <th>用户名</th>
+                    <th>密码</th>
+                    <th>手机号</th>
+                    <th>注册日期</th>
+                    <th>角色名</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="user,status:${userList}">
+                    <td th:text="${status.count}">行数</td>
+                    <td th:text="${user.getUId()}">ID</td>
+                    <td th:text="${user.getUUsername()}">用户名</td>
+                    <td th:text="${user.getUPassword()}">密码</td>
+                    <td th:text="${user.getUPhone()}">手机号</td>
+                    <td th:text="${#dates.format(user.getUDate(),'yyyy 年 MM 月 dd 日')}">注册日期</td>
+                    <td th:text="${user.role.getRName()}">角色名</td>
+                    <td>
+                        <a th:href="@{/user/getUserById1(uId=${user.getUId()},currentPage=${pages.getCurrentPage()},uUsername=${name1})}"
+                           class="layui-btn layui-btn-xs">修改</a>
+                        <a th:href="@{/user/deleteUser(uId=${user.getUId()},currentPage=${pages.getCurrentPage()},uUsername=${name1})}"
+                           class="layui-btn layui-btn-xs layui-btn-danger"
+                           th:if="${session.userInfo.getURoleId()!=user.getURoleId()}"
+                           onclick="return confirm('确认删除？');">删除</a>
+                        <a th:if="${session.userInfo.getURoleId()==user.getURoleId()}"
+                           class="layui-btn layui-btn-xs layui-btn-disabled">删除</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 引入 jQuery 库 -->
+<script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- 引入 layui JavaScript -->
+<script src="https://cdn.staticfile.org/layui/2.7.6/layui.min.js"></script>
+
+<script>
+    // 绑定清空按钮点击事件
+    $('.search-reset-btn').click(function () {
+        $('#search-input').val('');
+    });
+</script>
+
+</body>
+</html>
