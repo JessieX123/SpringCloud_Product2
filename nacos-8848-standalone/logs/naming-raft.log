@@ -1,0 +1,158 @@
+2023-06-25 09:56:36,795 INFO raft peers changed: [Member{ip='192.168.3.165', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2023-06-25 09:56:36,805 INFO initializing Raft sub-system
+
+2023-06-25 09:56:36,805 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2023-06-25 09:56:36,806 INFO cache loaded, datum count: 0, current term: 0
+
+2023-06-25 09:56:36,806 INFO finish to load data from disk, cost: 1 ms.
+
+2023-06-25 09:56:36,808 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-06-25 09:56:36,977 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-06-25 09:56:36,984 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-06-25 09:56:40,355 INFO leader timeout, start voting,leader: {"ip":"192.168.3.165:8848","term":0,"leaderDueMs":16337,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2023-06-25 09:56:41,792 WARN start to close old raft protocol!!!
+
+2023-06-25 09:56:41,792 WARN stop old raft protocol task for notifier
+
+2023-06-25 09:56:41,792 WARN stop old raft protocol task for master task
+
+2023-06-25 09:56:41,792 WARN stop old raft protocol task for heartbeat task
+
+2023-06-25 09:56:41,792 WARN clean old cache datum for old raft
+
+2023-06-25 09:56:41,792 WARN start to close old raft protocol!!!
+
+2023-06-25 09:56:41,792 WARN stop old raft protocol task for notifier
+
+2023-06-25 09:56:41,792 WARN stop old raft protocol task for master task
+
+2023-06-25 09:56:41,792 WARN stop old raft protocol task for heartbeat task
+
+2023-06-25 09:56:41,792 WARN clean old cache datum for old raft
+
+2023-06-25 09:56:41,792 WARN start to move old raft protocol metadata
+
+2023-06-25 09:56:41,793 WARN start to move old raft protocol metadata
+
+2023-06-25 09:56:41,793 INFO raft peers changed: [Member{ip='192.168.3.165', port=8848, state=UP, extendInfo={lastRefreshTime=1687658201793, raftPort=7848, version=1.4.5}}]
+
+2023-06-25 09:57:24,336 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@movie-service
+
+2023-06-25 09:57:24,644 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@openfeign-nacos
+
+2023-06-25 09:57:25,802 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@ticket-service
+
+2023-06-25 09:57:26,549 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@user-service
+
+2023-06-25 09:57:27,336 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@cinema-service
+
+2023-06-25 09:57:27,939 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@movie-cinema-service
+
+2023-06-25 11:17:57,026 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@cinema-service
+
+2023-06-25 11:17:57,030 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@movie-cinema-service
+
+2023-06-25 11:17:57,030 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@movie-service
+
+2023-06-25 11:17:57,031 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@openfeign-nacos
+
+2023-06-25 11:17:57,031 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@ticket-service
+
+2023-06-25 11:17:57,031 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@user-service
+
+2023-06-25 22:43:15,832 INFO raft peers changed: [Member{ip='192.168.3.165', port=8848, state=UP, extendInfo={raftPort=7848}}]
+
+2023-06-25 22:43:15,842 INFO initializing Raft sub-system
+
+2023-06-25 22:43:15,842 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2023-06-25 22:43:15,843 INFO cache loaded, datum count: 0, current term: 0
+
+2023-06-25 22:43:15,843 INFO finish to load data from disk, cost: 1 ms.
+
+2023-06-25 22:43:15,845 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2023-06-25 22:43:16,024 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2023-06-25 22:43:16,030 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2023-06-25 22:43:20,827 WARN start to close old raft protocol!!!
+
+2023-06-25 22:43:20,827 WARN stop old raft protocol task for notifier
+
+2023-06-25 22:43:20,827 WARN stop old raft protocol task for master task
+
+2023-06-25 22:43:20,827 WARN stop old raft protocol task for heartbeat task
+
+2023-06-25 22:43:20,827 WARN clean old cache datum for old raft
+
+2023-06-25 22:43:20,827 WARN start to close old raft protocol!!!
+
+2023-06-25 22:43:20,827 WARN stop old raft protocol task for notifier
+
+2023-06-25 22:43:20,827 WARN stop old raft protocol task for master task
+
+2023-06-25 22:43:20,827 WARN stop old raft protocol task for heartbeat task
+
+2023-06-25 22:43:20,827 WARN clean old cache datum for old raft
+
+2023-06-25 22:43:20,827 WARN start to move old raft protocol metadata
+
+2023-06-25 22:43:20,833 WARN start to move old raft protocol metadata
+
+2023-06-25 22:43:20,834 INFO raft peers changed: [Member{ip='192.168.3.165', port=8848, state=UP, extendInfo={lastRefreshTime=1687704200833, raftPort=7848, version=1.4.5}}]
+
+2023-06-25 22:43:57,249 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@movie-service
+
+2023-06-25 22:43:58,813 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@openfeign-nacos
+
+2023-06-25 22:44:00,953 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@ticket-service
+
+2023-06-25 22:44:02,826 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@user-service
+
+2023-06-25 22:44:04,631 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@cinema-service
+
+2023-06-25 22:44:06,163 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@movie-cinema-service
+
+2023-06-25 22:50:36,068 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@cinema-service
+
+2023-06-25 22:50:36,075 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@movie-cinema-service
+
+2023-06-25 22:50:36,076 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@movie-service
+
+2023-06-25 22:50:36,076 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@openfeign-nacos
+
+2023-06-25 22:50:36,077 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@ticket-service
+
+2023-06-25 22:50:36,077 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@user-service
+
+2023-06-25 22:51:09,301 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@movie-service
+
+2023-06-25 22:51:11,505 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@openfeign-nacos
+
+2023-06-25 22:51:14,389 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@ticket-service
+
+2023-06-25 22:51:16,895 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@user-service
+
+2023-06-25 22:51:19,218 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@cinema-service
+
+2023-06-25 22:51:21,607 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@movie-cinema-service
+
+2023-06-25 23:27:06,059 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@cinema-service
+
+2023-06-25 23:27:06,064 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@movie-cinema-service
+
+2023-06-25 23:27:06,064 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@movie-service
+
+2023-06-25 23:27:06,064 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@openfeign-nacos
+
+2023-06-25 23:27:06,066 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@ticket-service
+
+2023-06-25 23:27:06,066 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.public##DEFAULT_GROUP@@user-service
+

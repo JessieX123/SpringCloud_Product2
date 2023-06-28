@@ -1,0 +1,102 @@
+2023-06-21 11:47:17,051 INFO DEFAULT_GROUP@@movie-service is changed, add it to push queue.
+
+2023-06-21 11:47:17,074 INFO serviceName: DEFAULT_GROUP@@movie-service changed, schedule push for: 127.0.0.1:56224, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,56224,57231662062291
+
+2023-06-21 11:47:17,074 INFO send udp packet: 127.0.0.1,56224,57231662062291
+
+2023-06-21 11:47:17,082 INFO received ack: {"type": "push-ack", "lastRefTime":"57231662062291", "data":""} from: 127.0.0.1:56224, cost: 8 ms, unacked: 0, total push: 1
+
+2023-06-21 11:47:18,464 INFO DEFAULT_GROUP@@openfeign-nacos is changed, add it to push queue.
+
+2023-06-21 11:47:18,474 INFO serviceName: DEFAULT_GROUP@@openfeign-nacos changed, schedule push for: 127.0.0.1:62516, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,62516,57233058058250
+
+2023-06-21 11:47:18,474 INFO send udp packet: 127.0.0.1,62516,57233058058250
+
+2023-06-21 11:47:18,478 INFO received ack: {"type": "push-ack", "lastRefTime":"57233058058250", "data":""} from: 127.0.0.1:62516, cost: 4 ms, unacked: 0, total push: 2
+
+2023-06-21 11:47:20,062 INFO DEFAULT_GROUP@@role-service is changed, add it to push queue.
+
+2023-06-21 11:47:20,070 INFO serviceName: DEFAULT_GROUP@@role-service changed, schedule push for: 127.0.0.1:51958, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,51958,57234659137125
+
+2023-06-21 11:47:20,070 INFO send udp packet: 127.0.0.1,51958,57234659137125
+
+2023-06-21 11:47:20,073 INFO received ack: {"type": "push-ack", "lastRefTime":"57234659137125", "data":""} from: 127.0.0.1:51958, cost: 3 ms, unacked: 0, total push: 3
+
+2023-06-21 11:47:21,585 INFO DEFAULT_GROUP@@ticket-service is changed, add it to push queue.
+
+2023-06-21 11:47:21,586 INFO serviceName: DEFAULT_GROUP@@ticket-service changed, schedule push for: 127.0.0.1:62597, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,62597,57236177684750
+
+2023-06-21 11:47:21,587 INFO send udp packet: 127.0.0.1,62597,57236177684750
+
+2023-06-21 11:47:21,592 INFO received ack: {"type": "push-ack", "lastRefTime":"57236177684750", "data":""} from: 127.0.0.1:62597, cost: 5 ms, unacked: 0, total push: 4
+
+2023-06-21 11:47:23,170 INFO DEFAULT_GROUP@@user-service is changed, add it to push queue.
+
+2023-06-21 11:47:23,172 INFO serviceName: DEFAULT_GROUP@@user-service changed, schedule push for: 127.0.0.1:62106, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,62106,57237762329583
+
+2023-06-21 11:47:23,172 INFO send udp packet: 127.0.0.1,62106,57237762329583
+
+2023-06-21 11:47:23,174 INFO received ack: {"type": "push-ack", "lastRefTime":"57237762329583", "data":""} from: 127.0.0.1:62106, cost: 2 ms, unacked: 0, total push: 5
+
+2023-06-21 11:47:24,292 INFO DEFAULT_GROUP@@cinema-service is changed, add it to push queue.
+
+2023-06-21 11:47:24,293 INFO serviceName: DEFAULT_GROUP@@cinema-service changed, schedule push for: 127.0.0.1:59155, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,59155,57238884583250
+
+2023-06-21 11:47:24,293 INFO send udp packet: 127.0.0.1,59155,57238884583250
+
+2023-06-21 11:47:24,298 INFO received ack: {"type": "push-ack", "lastRefTime":"57238884583250", "data":""} from: 127.0.0.1:59155, cost: 5 ms, unacked: 0, total push: 6
+
+2023-06-21 11:49:40,936 INFO DEFAULT_GROUP@@movie-service is changed, add it to push queue.
+
+2023-06-21 11:49:40,938 INFO serviceName: DEFAULT_GROUP@@movie-service changed, schedule push for: 127.0.0.1:56224, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,56224,57375528883541
+
+2023-06-21 11:49:40,938 INFO send udp packet: 127.0.0.1,56224,57375528883541
+
+2023-06-21 11:49:40,939 INFO serviceName: DEFAULT_GROUP@@movie-service changed, schedule push for: 127.0.0.1:62516, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,62516,57375528883541
+
+2023-06-21 11:49:40,940 INFO send udp packet: 127.0.0.1,62516,57375528883541
+
+2023-06-21 11:49:40,946 INFO received ack: {"type": "push-ack", "lastRefTime":"57375528883541", "data":""} from: 127.0.0.1:62516, cost: 6 ms, unacked: 1, total push: 8
+
+2023-06-21 11:49:40,946 INFO received ack: {"type": "push-ack", "lastRefTime":"57375528883541", "data":""} from: 127.0.0.1:56224, cost: 8 ms, unacked: 0, total push: 8
+
+2023-06-21 11:49:40,979 INFO DEFAULT_GROUP@@openfeign-nacos is changed, add it to push queue.
+
+2023-06-21 11:49:40,980 INFO serviceName: DEFAULT_GROUP@@openfeign-nacos changed, schedule push for: 127.0.0.1:62516, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,62516,57375571087375
+
+2023-06-21 11:49:40,980 INFO send udp packet: 127.0.0.1,62516,57375571087375
+
+2023-06-21 11:49:40,984 INFO received ack: {"type": "push-ack", "lastRefTime":"57375571087375", "data":""} from: 127.0.0.1:62516, cost: 4 ms, unacked: 0, total push: 9
+
+2023-06-21 11:49:41,025 INFO DEFAULT_GROUP@@role-service is changed, add it to push queue.
+
+2023-06-21 11:49:41,026 INFO serviceName: DEFAULT_GROUP@@role-service changed, schedule push for: 127.0.0.1:51958, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,51958,57375617900625
+
+2023-06-21 11:49:41,026 INFO send udp packet: 127.0.0.1,51958,57375617900625
+
+2023-06-21 11:49:41,028 INFO received ack: {"type": "push-ack", "lastRefTime":"57375617900625", "data":""} from: 127.0.0.1:51958, cost: 2 ms, unacked: 0, total push: 10
+
+2023-06-21 11:49:41,065 INFO DEFAULT_GROUP@@ticket-service is changed, add it to push queue.
+
+2023-06-21 11:49:41,066 INFO serviceName: DEFAULT_GROUP@@ticket-service changed, schedule push for: 127.0.0.1:62597, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,62597,57375657337916
+
+2023-06-21 11:49:41,066 INFO send udp packet: 127.0.0.1,62597,57375657337916
+
+2023-06-21 11:49:41,071 INFO received ack: {"type": "push-ack", "lastRefTime":"57375657337916", "data":""} from: 127.0.0.1:62597, cost: 5 ms, unacked: 0, total push: 11
+
+2023-06-21 11:49:41,105 INFO DEFAULT_GROUP@@user-service is changed, add it to push queue.
+
+2023-06-21 11:49:41,106 INFO serviceName: DEFAULT_GROUP@@user-service changed, schedule push for: 127.0.0.1:62106, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,62106,57375697738791
+
+2023-06-21 11:49:41,106 INFO send udp packet: 127.0.0.1,62106,57375697738791
+
+2023-06-21 11:49:41,110 INFO received ack: {"type": "push-ack", "lastRefTime":"57375697738791", "data":""} from: 127.0.0.1:62106, cost: 4 ms, unacked: 0, total push: 12
+
+2023-06-21 11:49:41,164 INFO DEFAULT_GROUP@@cinema-service is changed, add it to push queue.
+
+2023-06-21 11:49:41,165 INFO serviceName: DEFAULT_GROUP@@cinema-service changed, schedule push for: 127.0.0.1:59155, agent: Nacos-Java-Client:v1.4.2, key: 127.0.0.1,59155,57375756559166
+
+2023-06-21 11:49:41,165 INFO send udp packet: 127.0.0.1,59155,57375756559166
+
+2023-06-21 11:49:41,169 INFO received ack: {"type": "push-ack", "lastRefTime":"57375756559166", "data":""} from: 127.0.0.1:59155, cost: 4 ms, unacked: 0, total push: 13
+

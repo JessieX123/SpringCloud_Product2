@@ -1,0 +1,81 @@
+2023-06-20 18:11:56,547 INFO Starting Nacos v1.4.5 using Java 11.0.19 on MacBook-Pro-14.local with PID 13234 (/Volumes/三星T7/资料/2022-2023学年下学期/SpringCloud/SpringCloud-项目文件/nacos/nacos-8848-standalone/target/nacos-server.jar started by kugou in /Volumes/三星T7/资料/2022-2023学年下学期/SpringCloud/SpringCloud-项目文件/nacos/nacos-8848-standalone/bin)
+
+2023-06-20 18:11:56,548 INFO The following 1 profile is active: "standalone"
+
+2023-06-20 18:11:57,993 INFO Tomcat initialized with port(s): 8848 (http)
+
+2023-06-20 18:11:58,001 INFO Starting service [Tomcat]
+
+2023-06-20 18:11:58,001 INFO Starting Servlet engine: [Apache Tomcat/9.0.63]
+
+2023-06-20 18:11:58,184 INFO At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+
+2023-06-20 18:11:58,223 INFO Initializing Spring embedded WebApplicationContext
+
+2023-06-20 18:11:58,224 INFO Root WebApplicationContext: initialization completed in 1635 ms
+
+2023-06-20 18:11:58,785 INFO HikariPool-1 - Starting...
+
+2023-06-20 18:11:58,793 WARN Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+
+2023-06-20 18:11:59,081 INFO HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+
+2023-06-20 18:11:59,082 INFO HikariPool-1 - Start completed.
+
+2023-06-20 18:11:59,685 INFO Nacos-related cluster resource initialization
+
+2023-06-20 18:11:59,697 INFO The cluster resource is initialized
+
+2023-06-20 18:11:59,934 INFO Reflections took 75 ms to scan 1 urls, producing 4 keys and 6 values 
+
+2023-06-20 18:11:59,968 INFO Reflections took 6 ms to scan 1 urls, producing 6 keys and 26 values 
+
+2023-06-20 18:11:59,980 INFO Reflections took 3 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2023-06-20 18:11:59,986 INFO Reflections took 1 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2023-06-20 18:12:00,416 INFO Adding welcome page: class path resource [static/index.html]
+
+2023-06-20 18:12:00,664 WARN You are asking Spring Security to ignore Ant [pattern='/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+
+2023-06-20 18:12:00,665 INFO Will not secure Ant [pattern='/**']
+
+2023-06-20 18:12:00,686 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f631ca0, org.springframework.security.web.context.SecurityContextPersistenceFilter@dd2856e, org.springframework.security.web.header.HeaderWriterFilter@5d4e13e1, org.springframework.security.web.csrf.CsrfFilter@62b93086, org.springframework.security.web.authentication.logout.LogoutFilter@4f8d86e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b1dc579, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77f905e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1697f2b3, org.springframework.security.web.session.SessionManagementFilter@4694f434, org.springframework.security.web.access.ExceptionTranslationFilter@7e9f2c32]
+
+2023-06-20 18:12:00,700 INFO Exposing 1 endpoint(s) beneath base path '/actuator'
+
+2023-06-20 18:12:00,748 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2023-06-20 18:12:00,760 INFO Started Nacos in 4.9 seconds (JVM running for 5.324)
+
+2023-06-20 18:12:00,761 INFO Nacos started successfully in stand alone mode. use embedded storage
+
+2023-06-20 18:12:03,208 INFO A cookie header was received [Hm_lvt_1cd9bcbaae133f03a6eb19da6579aaba=1683622560,1683701937] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+
+2023-06-20 18:12:03,237 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2023-06-20 18:12:03,237 INFO Initializing Servlet 'dispatcherServlet'
+
+2023-06-20 18:12:03,238 INFO Completed initialization in 1 ms
+
+2023-06-20 18:14:37,223 WARN [ConfigServer-HttpClientManager] Start destroying NacosRestTemplate
+
+2023-06-20 18:14:37,223 WARN [HttpClientBeanHolder] Start destroying common HttpClient
+
+2023-06-20 18:14:37,223 WARN [NotifyCenter] Start destroying Publisher
+
+2023-06-20 18:14:37,223 WARN [ThreadPoolManager] Start destroying ThreadPool
+
+2023-06-20 18:14:37,223 WARN [WatchFileCenter] start close
+
+2023-06-20 18:14:37,224 WARN [NotifyCenter] Destruction of the end
+
+2023-06-20 18:14:37,224 WARN [WatchFileCenter] start to shutdown this watcher which is watch : /Volumes/三星T7/资料/2022-2023学年下学期/SpringCloud/SpringCloud-项目文件/nacos/nacos-8848-standalone/conf
+
+2023-06-20 18:14:37,225 WARN [WatchFileCenter] already closed
+
+2023-06-20 18:14:37,226 WARN [HttpClientBeanHolder] Destruction of the end
+
+2023-06-20 18:14:37,227 WARN [ConfigServer-HttpClientManager] Destruction of the end
+

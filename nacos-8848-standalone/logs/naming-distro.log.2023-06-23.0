@@ -1,0 +1,14 @@
+2023-06-23 21:23:49,044 INFO distro notifier started
+
+2023-06-23 22:46:39,434 INFO [DISTRO-WARN] RecordListener not found, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@movie-service
+
+2023-06-23 23:00:39,933 INFO distro notifier started
+
+2023-06-23 23:17:00,133 INFO [DISTRO-WARN] RecordListener not found, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@cinema-service
+
+2023-06-23 23:17:00,139 INFO [DISTRO-WARN] RecordListener not found, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@movie-cinema-service
+
+2023-06-23 23:17:00,139 INFO [DISTRO-WARN] RecordListener not found, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@movie-service
+
+2023-06-23 23:17:00,140 INFO [DISTRO-WARN] RecordListener not found, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@openfeign-nacos
+
