@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### nacos ###
+nacos-8848-standalone/logs/

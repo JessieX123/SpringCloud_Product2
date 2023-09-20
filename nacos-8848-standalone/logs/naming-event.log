@@ -1,408 +1,48 @@
-2023-06-25 09:57:24,431 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:42:51,764 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.73.187:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 09:57:24,433 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 192.168.3.165:9003_true,
+2023-09-20 14:42:51,766 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 192.168.73.187:9003_true,
 
-2023-06-25 09:57:24,646 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:42:52,695 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.73.187:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 09:57:24,646 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
+2023-09-20 14:42:52,695 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.73.187:6969_true,
 
-2023-06-25 09:57:25,804 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:42:54,365 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.73.187:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 09:57:25,805 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 192.168.3.165:9004_true,
+2023-09-20 14:42:54,365 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 192.168.73.187:9004_true,
 
-2023-06-25 09:57:26,553 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:42:55,780 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.73.187:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 09:57:26,553 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.3.165:9000_true,
+2023-09-20 14:42:55,780 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.73.187:9000_true,
 
-2023-06-25 09:57:27,343 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:42:57,116 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.73.187:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 09:57:27,344 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 192.168.3.165:9002_true,
+2023-09-20 14:42:57,116 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 192.168.73.187:9002_true,
 
-2023-06-25 09:57:27,943 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:42:58,134 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.73.187:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 09:57:27,943 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 192.168.3.165:9005_true,
+2023-09-20 14:42:58,134 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 192.168.73.187:9005_true,
 
-2023-06-25 10:04:14,478 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:47:29,500 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.73.187:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 10:04:14,478 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
+2023-09-20 14:47:29,500 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 
 
-2023-06-25 10:04:24,009 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:47:29,533 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.73.187:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 10:04:24,009 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
+2023-09-20 14:47:29,533 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
 
-2023-06-25 10:08:14,110 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:47:29,569 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.73.187:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 10:08:14,110 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
+2023-09-20 14:47:29,569 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 
 
-2023-06-25 10:08:22,746 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:47:29,604 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.73.187:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 10:08:22,746 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
+2023-09-20 14:47:29,605 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
 
-2023-06-25 10:14:48,244 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:47:29,637 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.73.187:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 10:14:48,244 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
+2023-09-20 14:47:29,637 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 
 
-2023-06-25 10:14:56,938 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2023-09-20 14:47:29,684 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.73.187:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2023-06-25 10:14:56,938 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 10:21:36,032 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 10:21:36,032 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 10:21:46,183 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 10:21:46,183 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 10:25:42,468 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 10:25:42,469 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 10:25:53,787 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 10:25:53,787 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 10:40:56,444 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 10:40:56,446 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 10:41:07,828 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 10:41:07,828 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 10:52:37,419 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 10:52:37,420 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 10:52:47,446 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 10:52:47,446 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 11:00:50,820 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:00:50,820 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
-
-2023-06-25 11:00:53,203 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:00:53,203 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 
-
-2023-06-25 11:00:53,279 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:00:53,280 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 
-
-2023-06-25 11:00:53,319 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:00:53,319 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 
-
-2023-06-25 11:00:53,353 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:00:53,353 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 
-
-2023-06-25 11:00:54,475 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:00:54,475 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 11:00:55,616 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:00:55,616 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.3.165:9000_true,
-
-2023-06-25 11:01:02,047 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:01:02,047 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 192.168.3.165:9004_true,
-
-2023-06-25 11:01:04,086 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:01:04,086 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 192.168.3.165:9002_true,
-
-2023-06-25 11:01:05,153 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:01:05,153 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 192.168.3.165:9005_true,
-
-2023-06-25 11:01:05,830 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:01:05,830 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 192.168.3.165:9003_true,
-
-2023-06-25 11:01:06,111 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:01:06,111 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 11:15:35,721 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:15:35,722 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
-
-2023-06-25 11:15:35,749 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:15:35,749 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 
-
-2023-06-25 11:15:35,778 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:15:35,778 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 
-
-2023-06-25 11:15:35,811 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:15:35,811 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 
-
-2023-06-25 11:15:35,837 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:15:35,837 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 
-
-2023-06-25 11:15:35,867 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 11:15:35,867 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 22:43:57,366 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:43:57,367 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 192.168.3.165:9003_true,
-
-2023-06-25 22:43:58,814 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:43:58,814 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 22:44:00,960 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:44:00,960 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 192.168.3.165:9004_true,
-
-2023-06-25 22:44:02,829 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:44:02,829 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.3.165:9000_true,
-
-2023-06-25 22:44:04,636 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:44:04,636 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 192.168.3.165:9002_true,
-
-2023-06-25 22:44:06,164 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:44:06,164 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 192.168.3.165:9005_true,
-
-2023-06-25 22:48:20,514 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:48:20,515 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 
-
-2023-06-25 22:48:20,532 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:48:20,532 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 22:48:20,574 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:48:20,574 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 
-
-2023-06-25 22:48:20,607 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:48:20,607 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
-
-2023-06-25 22:48:20,632 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:48:20,632 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 
-
-2023-06-25 22:48:20,657 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:48:20,657 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 
-
-2023-06-25 22:51:09,306 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:51:09,306 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 192.168.3.165:9003_true,
-
-2023-06-25 22:51:11,514 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:51:11,515 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 22:51:14,393 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:51:14,393 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 192.168.3.165:9004_true,
-
-2023-06-25 22:51:16,907 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:51:16,907 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.3.165:9000_true,
-
-2023-06-25 22:51:19,222 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:51:19,222 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 192.168.3.165:9002_true,
-
-2023-06-25 22:51:21,608 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:51:21,608 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 192.168.3.165:9005_true,
-
-2023-06-25 22:57:07,418 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:57:07,418 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 22:57:19,059 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 22:57:19,060 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 23:15:20,493 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:20,494 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 
-
-2023-06-25 23:15:20,506 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:20,506 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 
-
-2023-06-25 23:15:20,562 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:20,562 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
-
-2023-06-25 23:15:20,602 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:20,602 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 
-
-2023-06-25 23:15:20,641 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:20,641 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 
-
-2023-06-25 23:15:20,673 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:20,673 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 23:15:40,855 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:40,855 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 192.168.3.165:9003_true,
-
-2023-06-25 23:15:42,087 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:42,088 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 23:15:44,069 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:44,069 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 192.168.3.165:9004_true,
-
-2023-06-25 23:15:45,934 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:45,934 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.3.165:9000_true,
-
-2023-06-25 23:15:47,595 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:47,595 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 192.168.3.165:9002_true,
-
-2023-06-25 23:15:49,162 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:15:49,162 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 192.168.3.165:9005_true,
-
-2023-06-25 23:19:41,763 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:19:41,763 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 
-
-2023-06-25 23:19:53,697 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:19:53,697 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 192.168.3.165:9005_true,
-
-2023-06-25 23:20:32,314 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:32,316 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 
-
-2023-06-25 23:20:32,342 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:32,342 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 23:20:32,361 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:32,361 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 
-
-2023-06-25 23:20:32,397 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:32,397 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
-
-2023-06-25 23:20:32,418 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:32,418 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 
-
-2023-06-25 23:20:32,449 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:32,449 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 
-
-2023-06-25 23:20:40,023 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:40,023 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 192.168.3.165:9005_true,
-
-2023-06-25 23:20:41,321 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:41,321 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 23:20:42,535 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:42,535 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 192.168.3.165:9002_true,
-
-2023-06-25 23:20:43,305 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:43,305 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.3.165:9000_true,
-
-2023-06-25 23:20:44,089 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:44,089 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 192.168.3.165:9004_true,
-
-2023-06-25 23:20:44,686 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:20:44,686 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 192.168.3.165:9003_true,
-
-2023-06-25 23:21:43,697 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:21:43,697 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 
-
-2023-06-25 23:21:43,788 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:21:43,788 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 23:21:43,805 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:21:43,805 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 
-
-2023-06-25 23:21:43,845 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:21:43,845 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
-
-2023-06-25 23:21:43,858 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:21:43,858 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 
-
-2023-06-25 23:21:43,902 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:21:43,902 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 
-
-2023-06-25 23:23:25,125 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:23:25,125 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 192.168.3.165:9003_true,
-
-2023-06-25 23:23:25,149 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:23:25,149 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 192.168.3.165:6969_true,
-
-2023-06-25 23:23:26,180 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:23:26,180 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 192.168.3.165:9004_true,
-
-2023-06-25 23:23:26,919 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:23:26,919 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 192.168.3.165:9000_true,
-
-2023-06-25 23:23:27,652 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:23:27,658 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 192.168.3.165:9002_true,
-
-2023-06-25 23:23:28,522 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:23:28,522 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 192.168.3.165:9005_true,
-
-2023-06-25 23:24:43,349 INFO DEFAULT_GROUP@@movie-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9003:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:24:43,349 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-service, ips: 
-
-2023-06-25 23:24:43,353 INFO DEFAULT_GROUP@@openfeign-nacos {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:6969:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:24:43,353 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@openfeign-nacos, ips: 
-
-2023-06-25 23:24:43,398 INFO DEFAULT_GROUP@@ticket-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9004:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:24:43,398 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@ticket-service, ips: 
-
-2023-06-25 23:24:43,418 INFO DEFAULT_GROUP@@user-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9000:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:24:43,418 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@user-service, ips: 
-
-2023-06-25 23:24:43,513 INFO DEFAULT_GROUP@@cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9002:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:24:43,513 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@cinema-service, ips: 
-
-2023-06-25 23:24:43,516 INFO DEFAULT_GROUP@@movie-cinema-service {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.3.165:9005:unknown:DEFAULT_1.0_true_false_DEFAULT]
-
-2023-06-25 23:24:43,516 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 
+2023-09-20 14:47:29,684 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@movie-cinema-service, ips: 
 

@@ -1,12 +1,12 @@
-/Library/Java/JavaVirtualMachines/jdk-17.0.7.jdk/Contents/Home/bin/java  -Xms512m -Xmx512m -Xmn256m -Dnacos.standalone=true -Dnacos.member.list= -Xlog:gc*:file=/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/nacos/nacos-8848-standalone/logs/nacos_gc.log:time,tags:filecount=10,filesize=102400 -Dloader.path=/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/nacos/nacos-8848-standalone/plugins/health,/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/nacos/nacos-8848-standalone/plugins/cmdb -Dnacos.home=/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/nacos/nacos-8848-standalone -jar /Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/nacos/nacos-8848-standalone/target/nacos-server.jar  --spring.config.additional-location=optional:file:/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/nacos/nacos-8848-standalone/conf/ --logging.config=/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/nacos/nacos-8848-standalone/conf/nacos-logback.xml --server.max-http-header-size=524288
+/Library/Java/JavaVirtualMachines/jdk-17.0.7.jdk/Contents/Home/bin/java  -Xms512m -Xmx512m -Xmn256m -Dnacos.standalone=true -Dnacos.member.list= -Xlog:gc*:file=/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/SpringCloud_Product2/nacos-8848-standalone/logs/nacos_gc.log:time,tags:filecount=10,filesize=102400 -Dloader.path=/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/SpringCloud_Product2/nacos-8848-standalone/plugins/health,/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/SpringCloud_Product2/nacos-8848-standalone/plugins/cmdb -Dnacos.home=/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/SpringCloud_Product2/nacos-8848-standalone -jar /Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/SpringCloud_Product2/nacos-8848-standalone/target/nacos-server.jar  --spring.config.additional-location=optional:file:/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/SpringCloud_Product2/nacos-8848-standalone/conf/ --logging.config=/Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/SpringCloud_Product2/nacos-8848-standalone/conf/nacos-logback.xml --server.max-http-header-size=524288
 
          ,--.
        ,--.'|
    ,--,:  : |                                           Nacos 1.4.5
 ,`--.'`|  ' :                       ,---.               Running in stand alone mode, All function modules
 |   :  :  | |                      '   ,'\   .--.--.    Port: 8848
-:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 53500
-|   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://192.168.3.165:8848/nacos/index.html
+:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 29759
+|   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://192.168.73.187:8848/nacos/index.html
 '   ' ;.    ;.--.  .-. | /    / ''   | |: :|  :  ;_
 |   | | \   | \__\/: . ..    ' / '   | .; : \  \    `.      https://nacos.io
 '   : |  ; .' ," .--.; |'   ; :__|   :    |  `----.   \
@@ -15,37 +15,37 @@
 ;   |.'     |  ,     .-./\   \  /            `--'---'
 '---'        `--`---'     `----'
 
-2023-06-25 22:43:14,696 INFO Tomcat initialized with port(s): 8848 (http)
+2023-09-20 14:41:08,802 INFO Tomcat initialized with port(s): 8848 (http)
 
-2023-06-25 22:43:14,911 INFO Root WebApplicationContext: initialization completed in 1473 ms
+2023-09-20 14:41:09,017 INFO Root WebApplicationContext: initialization completed in 1460 ms
 
-2023-06-25 22:43:16,303 INFO Adding welcome page: class path resource [static/index.html]
+2023-09-20 14:41:10,301 INFO Adding welcome page: class path resource [static/index.html]
 
-2023-06-25 22:43:16,509 WARN You are asking Spring Security to ignore Ant [pattern='/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-09-20 14:41:10,502 WARN You are asking Spring Security to ignore Ant [pattern='/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
 
-2023-06-25 22:43:16,509 INFO Will not secure Ant [pattern='/**']
+2023-09-20 14:41:10,502 INFO Will not secure Ant [pattern='/**']
 
-2023-06-25 22:43:16,527 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bd2af5b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a1d3225, org.springframework.security.web.header.HeaderWriterFilter@2f4c2cd4, org.springframework.security.web.csrf.CsrfFilter@748d2277, org.springframework.security.web.authentication.logout.LogoutFilter@c755b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50fb33a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f94fb9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@250a500b, org.springframework.security.web.session.SessionManagementFilter@1cc680e, org.springframework.security.web.access.ExceptionTranslationFilter@58f39564]
+2023-09-20 14:41:10,519 INFO Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58ba5b30, org.springframework.security.web.context.SecurityContextPersistenceFilter@44cffc25, org.springframework.security.web.header.HeaderWriterFilter@1457fde, org.springframework.security.web.csrf.CsrfFilter@2f4c2cd4, org.springframework.security.web.authentication.logout.LogoutFilter@a5272be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25aeb5ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@250a500b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dba773d, org.springframework.security.web.session.SessionManagementFilter@671d1157, org.springframework.security.web.access.ExceptionTranslationFilter@50fb33a]
 
-2023-06-25 22:43:16,539 INFO Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-09-20 14:41:10,533 INFO Exposing 1 endpoint(s) beneath base path '/actuator'
 
-2023-06-25 22:43:16,572 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+2023-09-20 14:41:10,567 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
 
-2023-06-25 22:43:16,583 INFO Nacos started successfully in stand alone mode. use embedded storage
+2023-09-20 14:41:10,583 INFO Nacos started successfully in stand alone mode. use embedded storage
 
-2023-06-25 22:43:26,354 INFO Initializing Servlet 'dispatcherServlet'
+2023-09-20 14:42:20,656 INFO Initializing Servlet 'dispatcherServlet'
 
-2023-06-25 22:43:26,355 INFO Completed initialization in 1 ms
+2023-09-20 14:42:20,659 INFO Completed initialization in 3 ms
 
-2023-06-25 23:28:00,505 WARN [NotifyCenter] Start destroying Publisher
+2023-09-20 14:48:36,639 WARN [WatchFileCenter] start close
 
-2023-06-25 23:28:00,505 WARN [WatchFileCenter] start close
+2023-09-20 14:48:36,639 WARN [NotifyCenter] Start destroying Publisher
 
-2023-06-25 23:28:00,506 WARN [NotifyCenter] Destruction of the end
+2023-09-20 14:48:36,639 WARN [ThreadPoolManager] Start destroying ThreadPool
 
-2023-06-25 23:28:00,506 WARN [ThreadPoolManager] Start destroying ThreadPool
+2023-09-20 14:48:36,640 WARN [WatchFileCenter] start to shutdown this watcher which is watch : /Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/SpringCloud_Product2/nacos-8848-standalone/conf
 
-2023-06-25 23:28:00,506 WARN [WatchFileCenter] start to shutdown this watcher which is watch : /Users/kugou/Documents/编程学习/项目文件/【杨红祥】/SpringCloud/nacos/nacos-8848-standalone/conf
+2023-09-20 14:48:36,640 WARN [WatchFileCenter] already closed
 
-2023-06-25 23:28:00,507 WARN [WatchFileCenter] already closed
+2023-09-20 14:48:36,640 WARN [NotifyCenter] Destruction of the end
 
