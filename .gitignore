@@ -39,3 +39,4 @@ build/
 
 ### nacos ###
 nacos-8848-standalone/logs/
+nacos-8848-standalone/bin/logs/
